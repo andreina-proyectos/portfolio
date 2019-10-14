@@ -1,7 +1,7 @@
 'use strict';
-const cards = document.querySelector(".cards");
-const images = document.querySelectorAll(".card__img");
-const backgrounds = document.querySelectorAll(".card__bg");
+const projects = document.querySelector(".projects");
+const images = document.querySelectorAll(".project__img");
+const backgrounds = document.querySelectorAll(".project__bg");
 const range = 40;
 
 const calcValue = (a, b) => (((a * 100) / b) * (range / 100) -(range / 2));
@@ -17,7 +17,7 @@ document.addEventListener('mousemove', ({x, y}) => {
     const yValue = calcValue(y, window.innerHeight);
     const xValue = calcValue(x, window.innerWidth);
 
-    cards.style.transform = `rotateX(${yValue}deg) rotateY(${xValue}deg)`;
+    projects.style.transform = `rotateX(${yValue}deg) rotateY(${xValue}deg)`;
 
     [].forEach.call(images, (image) => {
       image.style.transform = `translateX(${-xValue}px) translateY(${yValue}px)`;
