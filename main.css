@@ -14,47 +14,64 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* overflow: hidden; */
   perspective: 1800px;
   text-align: center;
   margin: 0 20px;
-}
-
-.header{
-  width: 100vw;
-  text-align: center;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-}
-
-.nav__list {
-  color:white;
-  display: flex;
-}
-
-.nav__list__element {
-  margin:20px;
 }
 
 .main{
   flex-grow:1;
 }
 
-h1 {
-  color: white;
-  font-size:32px;
-  font-weight: 800;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  transform: translateZ(35px);
+.main__title {
+  margin: 20px;
 }
 
-h3 {
-  color: white;
-  font-size: 16px;
-  margin-bottom: 6px;
-  transform: translateZ(25px);
+.about-skills__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.main__about {
+  display: flex;
+  align-items: center;
+  width:70%;
+}
+
+.about__photo {
+  width:25%;
+  border-radius: 100%;
+}
+
+.about__text__wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__content {
+  max-width: 50%;
+}
+
+
+.main__skills {
+  width:30%;
+}
+
+
+.skills__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__element {
+  margin:5px;
+  padding:5px;
+  background-color:goldenrod;
+  border-radius: 3px;
 }
 
 .cards {
@@ -137,19 +154,9 @@ h3 {
   margin-bottom: 3px;
 }
 
-.notice {
-  background: gold;
-  border-top-left-radius: 6px;
-  bottom: 0;
-  font-family: monospace;
-  font-size: 14px;
-  padding: 8px 10px;
-  position: absolute;
-  right: -20px;
-}
-
 .footer{
   flex-grow:0;
+  margin-top:30px;
 }
 
 .twitter__icon {
