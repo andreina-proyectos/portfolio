@@ -7,6 +7,15 @@
   color:darkgray;
 }
 
+#ball {
+  background-color: green;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  left: 90px;
+  top: 90px;
+  border-radius: 20px;}
+
 
 body {
   font-family: 'Open Sans', sans;

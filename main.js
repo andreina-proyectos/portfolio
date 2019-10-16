@@ -28,3 +28,23 @@ document.addEventListener('mousemove', ({x, y}) => {
     })
 	})
 }, false);
+
+
+//DEVICE*******************⭐️
+
+if(window.DeviceOrientationEvent) {
+  console.log("Browser supports the device orientation");
+  //registering deviceorientation event listener
+  window.addEventListener("deviceorientation", process, false);
+} else {
+  // The browser does not support the device orientation event
+   console.log("Browser does not support the device orientation");
+}
+
+function process(event) {
+//put the code to be executed when  device orientation is changed
+console.log("Device Orientation changed");
+var alpha = event.alpha;
+var beta = event.beta;
+var gamma = event.gamma;
+console.log("Alpha : " + alpha + "Beta : " + beta + "Gamma : " + gamma ); 
