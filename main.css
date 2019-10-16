@@ -28,7 +28,11 @@ body {
 }
 
 .web-content {
-  flex-grow:1;
+  flex-grow:2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main{
@@ -68,11 +72,6 @@ body {
   max-width: 50%;
 }
 
-.card {
-
-}
-
-
 .main__skills {
  margin:20px;
  width:40%;
@@ -95,11 +94,17 @@ body {
 
 
 /* PROJECTS */
+
+.title-container {
+  z-index: 2;
+}
+
 .projects {
   background-color: white;
   border-radius: 15px;
   display:flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 30px 35px;
   text-align: left;
   transform-origin: 50% 50%;
@@ -162,8 +167,11 @@ body {
 }
 
 .footer{
-  flex-grow:0;
-  margin-top:30px;
+  flex-grow: 0;
+  height: 100px;
+  display: flex;
+  width:100%;
+  justify-content: center;
 }
 
 .twitter__icon {
