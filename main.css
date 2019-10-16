@@ -8,6 +8,7 @@
 }
 
 body {
+  width:100vw;
   font-family: 'Open Sans', sans;
   background-color:white;
   display: flex;
@@ -20,17 +21,21 @@ body {
 }
 
 .all-wrapper {
+  width:100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .web-content {
+  width:100vw;
   flex-grow:2;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   align-items: center;
 }
 
@@ -115,7 +120,7 @@ body {
 }
 
 .projects__title {
-  margin-top:50px;
+  margin-top:40px;
 }
 
 .projects {
